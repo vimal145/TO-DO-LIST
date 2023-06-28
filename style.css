@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html {
+  background-color: antiquewhite;
+  font-size: 10px;
+}
+
+.container {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  min-height: 100vh;
+  padding: 3rem;
+}
+.container h1 {
+  margin: 1.8rem;
+  font-size: 3rem;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+  word-spacing: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+input,
+textarea,
+button {
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 1.4rem;
+  font-size: 2.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 0.5rem;
+  outline: none;
+}
+button {
+  color: white;
+  background-color: rgba(0, 0, 255, 0.511);
+  transition: all 0.2s;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 255, 0.708);
+}
+.task {
+  background-color: gray;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#btn {
+  background-color: rgb(50, 50, 50);
+  cursor: pointer;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+#btn:hover {
+  background-color: rgb(33, 32, 32);
+}
+.task p {
+  font-size: 2.8rem;
+}
+.task span {
+  color: rgba(0, 0, 0, 0.551);
+  font-size: 1.8rem;
+}
+.task > div {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 8px;
+  }
+  .container h1 {
+    margin: 1rem;
+    font-size: 2.5rem;
+  }
+  input,
+  textarea,
+  button {
+    padding: 1rem;
+    margin: 5px;
+    font-size: 2rem;
+  }
+  .task {
+    padding: 1rem;
+    margin: 1rem;
+
+    font-size: 2rem;
+  }
+  .task p {
+    font-size: 2.2rem;
+  }
+  .task span {
+    font-size: 1.9rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 6px;
+  }
+  .container {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: antiquewhite;
+  }
+  .container h1 {
+    margin: 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 0.4rem;
+    word-spacing: 1rem;
+  }
+  input,
+  textarea,
+  button {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  .task {
+    background-color: gray;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+
+    font-size: 2rem;
+  }
+  .task p {
+    font-size: 1.7rem;
+  }
+  .task span {
+    font-size: 1.4rem;
+  }
+  form {
+    margin-bottom: 60px;
+  }
+}
